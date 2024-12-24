@@ -1,40 +1,38 @@
-# SvelteKit SaaS Template
+# create-svelte
 
-A production-ready template for building SaaS applications with:
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
 
-- 🔐 Authentication (LinkedIn OAuth)
-- 🤖 AI Integration (Claude API)
-- 📹 Video Conferencing (100ms)
-- 💳 Payments Integration
-- 📊 Analytics Dashboard
+## Creating a project
 
-## Quick Start
+If you're seeing this, you've probably already done this step. Congrats!
 
 ```bash
-# Clone the template
-git clone https://github.com/gidiguru/sveltekit-saas-template.git
+# create a new project in the current directory
+npm create svelte@latest
 
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-
-# Start development server
-npm run dev
+# create a new project in my-app
+npm create svelte@latest my-app
 ```
 
-## Features
+## Developing
 
-- SvelteKit + TypeScript
-- TailwindCSS for styling
-- Authentication with LinkedIn OAuth
-- Claude AI integration
-- Video conferencing with 100ms
-- Rate limiting and API protection
-- Analytics and tracking
-- Responsive design
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-## Documentation
+```bash
+npm run dev
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for development guidelines.
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
